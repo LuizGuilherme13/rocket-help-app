@@ -2,7 +2,7 @@ import { SignIn } from "./src/screens/SignIn";
 import { NativeBaseProvider, StatusBar } from "native-base";
 import { THEME } from "./src/styles/theme";
 import { Loading } from "./src/components/Loading";
-import { Home } from "./src/screens/Home";
+import { Routes } from "./src/routes";
 import {
   useFonts,
   Roboto_400Regular,
@@ -19,7 +19,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Home /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </NativeBaseProvider>
   );
 }
